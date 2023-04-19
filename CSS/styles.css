@@ -1,0 +1,12 @@
+h1{
+    border:1px solid black;
+    color:black;
+    font-size:40px;
+    font-weight:500; 
+}
+p{
+    border:1px dotted black;
+    color: black;
+    font-size:40px;
+    font-weight:500; 
+}

@@ -1,0 +1,12 @@
+h1{
+    border:1px solid rgb(135, 11, 53);
+    color: blueviolet;
+    font-size:40px;
+    font-weight:500; 
+}
+p{
+    border:1px dotted rgb(79, 33, 187);
+    color: red;
+    font-size:40px;
+    font-weight:500; 
+}
