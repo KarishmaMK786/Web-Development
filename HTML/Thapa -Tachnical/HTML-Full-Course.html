@@ -1,0 +1,327 @@
+<!-- 
+    * URL-Uniform Resource Locator
+        `
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+ </head>
+ <body>
+    <pre>
+        Hii,
+             karishma this side.
+             How you all doing?
+    </pre>
+    <!-- Adding phone number -->
+    
+    <a href="tel:7338575834"> +917338575834</a>
+
+    <!-- Adding email  -->
+
+    <a href="mailto:matazkk786@gmail.com">matazkk786@gmail.com</a>
+    
+    
+    <!-- Semantic layout -->
+    <header>
+        <h1>This is header</h1>
+        <nav>
+            <p>This is navigation</p>
+        </nav>
+    </header>
+    
+    <main>
+        <section>This is section inside main</section>
+    </main>
+    <footer>
+        <p>contact us</p>
+    </footer>
+
+    <!-- example for list -->
+    <ul style="list-style-type: square;">
+        <li>HTML
+            <ul style="list-style-type: circle;">
+                <li>HTML Semantic Layout</li>
+                <li>Semantic Element
+                    <ol>
+                        <li>Header</li>
+                        <li>Footer</li>
+                    </ol>
+                </li>
+                <li>Non Semantic Element
+                    <ol>
+                        <li>div</li>
+                        <li>Span</li>
+                    </ol>
+                </li>
+            </ul>
+
+        </li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+     <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+           
+            <tr>
+                <th>UserName</th>>
+                <th>password</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Binod</td>
+                <td>Thapa</td>
+            </tr>
+            <tr>
+                <td>Thapa</td>
+                <td>Technical</td>
+            </tr>
+        </tbody>
+     </table>
+
+     <!-- School Time table -->
+
+     <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th colspan="7">Time Table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="7">Hours</th>
+            </tr>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thr</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <th colspan="6">Lunch</th>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td rowspan="2">Science</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                
+            </tr>
+
+        </tbody>
+
+     </table>
+
+
+     <!-- 
+        <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <style>
+      .labelstyle {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Registration Form</h1>
+    <hr />
+    <form action="#">
+      <label for="username">username</label>
+      <input type="text" id="username" />
+      <!--: The <label> element defines a label for several form elements.
+     The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element. 
+    The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+    
+    -->
+      <input type="password" name="" id="" />
+      <input type="email" name="" id="" />
+      <input type="number" name="" id="" />
+      <input type="color" name="" id="" />
+      <input type="date" name="" id="" />
+      <input type="range" name="" id="" />
+
+      <!-- 3: The <select> element defines a drop-down list: -->
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+
+      <!--4: The <textarea> element defines a multi-line input field (a text area): 
+      The rows attribute specifies the visible number of lines in a text area.
+      The cols attribute specifies the visible width of a text area.-->
+      <textarea name="" id="" cols="30" rows="20"></textarea>
+
+      <!--5:The <button> element defines a clickable button: -->
+      <button onclick="alert('Hii')">clikc me</button>
+
+      <!--6: The <fieldset> element is used to group related data in a form.
+             The <legend> element defines a caption for the <fieldset> element -->
+      <form action="/action_page.php">
+        <fieldset>
+          <legend>Portfolio:</legend>
+          <label id="indilablestyle" class="labelstyle" for="fname"
+            >First name:</label
+          ><br />
+          <input type="text" id="fname" name="fname" value="John" /><br />
+
+          <label id="indilablestyle" class="labelstyle" for="lname"
+            >Last name:</label
+          ><br />
+          <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </form>
+  </body>
+</html>
+ -->
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fomr HTML</title>
+  </head>
+  <body>
+   tell the user that we will create a wroking fomr  -->
+    <h1>HTML Registration Form</h1>
+    <br />
+    <form action="#">
+      <div>
+        <label for="username">Enter your name</label>
+        <input type="text" id="username" value="vinod" readonly disabled  size="50"/>
+        <!-- The input value attribute specifies an initial value for an input field: -->
+        <!-- The input readonly attribute specifies that an input field is read-only. -->
+        <!-- The input disabled attribute specifies that an input field should be disabled. -->
+        <!-- The input size attribute specifies the visible width, in characters, of an input field. -->
+        <!-- The default value for size is 20. -->
+        <!-- The input maxlength attribute specifies the maximum number of characters allowed in an input field. -->
+        <input type="text" maxlength="10">
+        <!-- The input min and max attributes specify the minimum and maximum values for an input field. -->
+        <br />
+        <br />
+     
+          <label for="datemax">Enter a date before 1980-01-01:</label>
+          <input
+            type="date"
+            id="datemax"
+            name="datemax"
+            max="1979-12-31"
+          /><br /><br />
+
+          <label for="datemin">Enter a date after 2000-01-01:</label>
+          <input
+            type="date"
+            id="datemin"
+            name="datemin"
+            min="2000-01-01"
+            max="2022-01-01"
+          /><br /><br />
+
+          <label for="quantity">Quantity (between 1 and 5):</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="5"
+          /><br /><br />
+          <!-- The input multiple attribute specifies that the user is allowed to enter more than one value in an input field. -->
+           <label for="files">Select files:</label>
+          <input type="file" id="files" name="files" multiple /><br><br>
+
+  <!-- The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format). -->
+
+   <input type="email" maxlength="10" placeholder="deamo@thaap.xom" value="vinod" required>
+
+  <!-- The input required attribute specifies that an input field must be filled out before submitting the form. -->
+
+  <!-- The input autofocus attribute specifies that an input field should automatically get focus when the page loads. -->
+   <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus autocomplete="off"><br>
+
+  <!-- The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off. -->
+
+  <!-- The input list attribute refers to a <datalist> element that contains pre-defined options for an <input> element. -->
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+
+        </form>
+      </div>
+    </form>
+  </body>
+</html> 
+      -->
+
+      <!-- iframe -->
+
+      <iframe
+       width="560"
+        height="315" 
+        src="https://www.youtube.com/embed/byTOONVJn-k?start=8494" 
+        title="YouTube video player" 
+        frameborder="0"
+         allow="accelerometer; 
+         autoplay;
+          clipboard-write; 
+          encrypted-media;
+           gyroscope; 
+           picture-in-picture; 
+           web-share" allowfullscreen>
+        </iframe>
+
+      <iframe>
+        src="https://es.wikipedia.org/w/index.php?title=Especial:Buscar&go=Go&search="
+      </iframe>
+ </body>
+ </html>
