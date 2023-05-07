@@ -1,0 +1,42 @@
+.container {
+    border: 6px solid black;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    height: 200px;
+   
+}
+.flex-item {
+    border:none;
+    color: white;
+    font-size:25px;
+    padding: 10px;
+    text-align: center;   
+}
+.item-1 {
+    background-color: red;
+}
+.item-2 {
+    background-color:chartreuse;
+}
+.item-3 {
+    background-color:chocolate;
+}
+.item-4 {
+    background-color:cornflowerblue;
+}
+.item-5 {
+    background-color:palevioletred;
+}
+.item-6 {
+    background-color: blue;
+}
+.item-7 {
+    background-color: rgb(89, 240, 142);
+}
+.item-8 {
+    background-color: rgb(255, 0, 81);
+}
+.item-9 {
+    background-color: rgb(210, 69, 69);
+}
