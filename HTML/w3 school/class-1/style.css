@@ -1,0 +1,12 @@
+/* p {
+   display: none; 
+   background-color: blue;
+   padding: 25px;
+}
+div:hover p   {
+    display:block;
+} */
+p::first-line {
+    color: red;
+    text-align: center;
+}
