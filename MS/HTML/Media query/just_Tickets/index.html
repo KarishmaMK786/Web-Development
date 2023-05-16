@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #f84364;
+        margin-bottom: 80px;
+      }
+      #container {
+        height: 500px;
+        width:50%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 150px);
+        grid-gap: 20px;
+       justify-content: center;
+       
+      }
+      #container > div {
+        border: 1px solid rgb(210, 66, 90);
+      }
+      .item {
+        display: flex;
+        flex-flow: row wrap;
+
+      }
+
+      #item-1-1 {
+          flex-basis: 150px;
+      }
+      #item-1-2 {
+          flex-basis: 200px;
+          display: flex;
+          flex-flow: column wrap;
+      }
+      #item-1-2 > div {
+        height: 25%;
+        width: 100%;
+        margin:0%;
+      }
+      #item-1-2 > div > button {
+            background-color: #f84364;
+            margin-top: 2px; 
+            padding: 7px;
+            border-radius: 5px;
+            color:white;
+            border: none;;
+      }
+
+      
+      #item-2-1 {
+          flex-basis: 150px;
+      }
+      #item-2-2 {
+          flex-basis: 200px;
+          display: flex;
+          flex-flow: column wrap;
+      }
+      #item-2-2 > div {
+        height: 25%;
+        width: 100%;
+        margin:0%;
+      }
+      #item-2-2 > div > button {
+            background-color: #f84364;
+            margin-top: 2px; 
+            padding: 7px;
+            border-radius: 5px;
+            color:white;
+            border: none;;
+      }
+      
+      #item-3-1 {
+          flex-basis: 150px;
+      }
+      #item-3-2 {
+          flex-basis: 200px;
+          display: flex;
+          flex-flow: column wrap;
+      }
+      #item-3-2 > div {
+        height: 25%;
+        width: 100%;
+        margin:0%;
+      }
+      #item-3-2 > div > button {
+            background-color: #f84364;
+            margin-top: 2px; 
+            padding: 7px;
+            border-radius: 5px;
+            color:white;
+            border: none;;
+      }
+      
+      #item-4-1 {
+          flex-basis: 150px;
+      }
+      #item-4-2 {
+          flex-basis: 200px;
+          display: flex;
+          flex-flow: column wrap;
+      }
+      #item-4-2 > div {
+        height: 25%;
+        width: 100%;
+        margin:0%;
+      }
+      #item-4-2 > div > button {
+            background-color: #f84364;
+            margin-top: 2px; 
+            padding: 7px;
+            border-radius: 5px;
+            color:white;
+            border: none;;
+      }
+      
+      #item-5-1 {
+          flex-basis: 150px;
+      }
+      #item-5-2 {
+          flex-basis: 200px;
+          display: flex;
+          flex-flow: column wrap;
+      }
+      #item-5-2 > div {
+        height: 25%;
+        width: 100%;
+        margin:0%;
+      }
+      #item-5-2 > div > button {
+            background-color: #f84364;
+            margin-top: 2px; 
+            padding: 7px;
+            border-radius: 5px;
+            color:white;
+            border: none;;
+      }
+      
+      #item-6-1 {
+          flex-basis: 150px;
+      }
+      #item-6-2 {
+          flex-basis: 200px;
+          display: flex;
+          flex-flow: column wrap;
+      }
+      #item-6-2 > div {
+        height: 25%;
+        width: 100%;
+        margin:0%;
+      }
+      #item-6-2 > div > button {
+            background-color: #f84364;
+            margin-top: 2px; 
+            padding: 7px;
+            border-radius: 5px;
+            color:white;
+            border: none;;
+      }
+      
+      
+
+      /* Medium screens */
+      @media only screen and (min-width: 421px) and (max-width: 780px) {
+      }
+      
+      /* small screens */
+      @media only screen and (min-width: 70px) and (max-width: 420px) {
+      }
+    </style>
+  </head>
+  <body>
+    <!-- image link - 
+      https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg -->
+    <h1>Just movies</h1>
+    <div id="container">
+      <div class="item" id="item-1">
+        <div id="item-1-1">
+          <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image"  width="80%" height="80%">
+        </div>
+        <div id="item-1-2">
+          <div>
+            <h3>ET (2022)</h3>
+          </div>
+          <div>
+            <p>Releasing on 11 Mar,2022</p>
+          </div>
+          <div>
+            <button>Book tickets</button>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item-2">
+        <div id="item-2-1">
+          <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image"  width="80%" height="80%">
+        </div>
+        <div id="item-2-2">
+          <div>
+            <h3>ET (2022)</h3>
+          </div>
+          <div>
+            <p>Releasing on 11 Mar,2022</p>
+          </div>
+          <div>
+            <button>Book tickets</button>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item-3">
+        <div id="item-3-1">
+          <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image"  width="80%" height="80%">
+        </div>
+        <div id="item-3-2">
+          <div>
+            <h3>ET (2022)</h3>
+          </div>
+          <div>
+            <p>Releasing on 11 Mar,2022</p>
+          </div>
+          <div>
+            <button>Book tickets</button>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item-4">
+        <div id="item-4-1">
+          <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image"  width="80%" height="80%">
+        </div>
+        <div id="item-4-2">
+          <div>
+            <h3>ET (2022)</h3>
+          </div>
+          <div>
+            <p>Releasing on 11 Mar,2022</p>
+          </div>
+          <div>
+            <button>Book tickets</button>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item-5">
+        <div id="item-5-1">
+          <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image"  width="80%" height="80%">
+        </div>
+        <div id="item-5-2">
+          <div>
+            <h3>ET (2022)</h3>
+          </div>
+          <div>
+            <p>Releasing on 11 Mar,2022</p>
+          </div>
+          <div>
+            <button>Book tickets</button>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item-6">
+        <div id="item-6-1">
+          <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image"  width="80%" height="80%">
+        </div>
+        <div id="item-6-2">
+          <div>
+            <h3>ET (2022)</h3>
+          </div>
+          <div>
+            <p>Releasing on 11 Mar,2022</p>
+          </div>
+          <div>
+            <button>Book tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

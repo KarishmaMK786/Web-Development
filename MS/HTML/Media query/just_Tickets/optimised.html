@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #f84364;
+        margin-bottom: 80px;
+      }
+      #container {
+        height: 500px;
+        width:50%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 150px);
+        grid-gap: 20px;
+       justify-content: center;
+       
+      }
+      #container > div {
+        border: 1px solid rgb(210, 66, 90);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        justify-content: left;
+      }  
+      #container > div > div {
+        margin-left:20px;
+          
+      }
+
+      img {
+        width: 150px;
+        height:100%;
+      
+      }
+      button {
+        margin-top: 20pxpx;
+        padding:8px;
+        border:none;
+        background-color: #f84364;
+        border-radius:10px;
+        color:white
+      }
+
+      
+      /* Medium screens */
+      @media only screen and (min-width: 421px) and (max-width: 780px) {
+        #container {
+        height: 1000px;
+        width:50%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 250px);
+        grid-gap: 20px;
+       justify-content: center;
+       
+      }
+        #container > div {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }  
+        img {
+            width: 100px;
+            margin:auto;
+            height:100px;
+            border-radius:50%;
+        }
+        button {
+        margin-top: 20pxpx;
+        margin-bottom: 5px;
+        padding:8px;
+        border:none;
+        background-color: #0697a1;
+        border-radius:10px;
+        color:white
+      }
+      }
+      
+      /* small screens */
+      @media only screen and (min-width: 70px) and (max-width: 420px) {
+        #container {
+        height: 1000px;
+        width:60%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 250px);
+        grid-gap: 20px;
+       justify-content: center;
+       
+      }
+        #container > div {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }  
+        img {
+            width: 100px;
+            margin:auto;
+            height:100px;
+            border-radius:50%;
+        }
+        button {
+        margin-bottom: 5px;
+        padding:8px;
+        border:none;
+        background-color: #76253e;
+        border-radius:10px;
+        color:white
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- image link - 
+      https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg -->
+    <h1>Just movies</h1>
+    <div id="container">
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image" >
+        <div >
+            <h3>ET (2022)</h3>
+            <p>Releasing on 11 Mar,2022</p>
+            <button>Book tickets</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image" >
+        <div >
+            <h3>ET (2022)</h3>
+            <p>Releasing on 11 Mar,2022</p>
+            <button>Book tickets</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image" >
+        <div >
+            <h3>ET (2022)</h3>
+            <p>Releasing on 11 Mar,2022</p>
+            <button>Book tickets</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image" >
+        <div >
+            <h3>ET (2022)</h3>
+            <p>Releasing on 11 Mar,2022</p>
+            <button>Book tickets</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image" >
+        <div >
+            <h3>ET (2022)</h3>
+            <p>Releasing on 11 Mar,2022</p>
+            <button>Book tickets</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg" alt="cinema image" >
+        <div >
+            <h3>ET (2022)</h3>
+            <p>Releasing on 11 Mar,2022</p>
+            <button>Book tickets</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
