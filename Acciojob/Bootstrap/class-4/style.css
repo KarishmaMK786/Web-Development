@@ -1,0 +1,12 @@
+.container {
+    border: 10px solid red;
+}
+.row {
+    border: 2px solid black
+}
+.row>div:nth-child(1) {
+    background-color: pink;
+}
+.row>div:nth-child(2) {
+    background-color: rgb(127, 69, 194);
+}

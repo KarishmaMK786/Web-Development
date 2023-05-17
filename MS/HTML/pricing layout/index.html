@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Layout</title>
+    <style>
+   
+        h1 {
+            font-size: 50px;
+            width: 50%;
+            text-align: center;
+            margin:auto;
+        }
+
+        .normal-conatiner > p {
+            text-align: center;
+            width: 40%;
+            margin:auto;
+            padding-top: 40px;
+        }
+
+        .container {
+            border:1px solid red;
+            width: 60%;
+            height: 300px;
+            margin: auto;
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap:50px;
+        }
+        .container div {
+            border: 1px solid red;
+        }
+        .container>div>h3, h2, p{
+            text-align: center;
+        }
+        .container>div>h2 {
+            color: rgb(34, 222, 168);
+        }
+        button {
+            text-align: center;
+            padding-bottom: 50px;
+            margin-left:35px;
+            width: 130px;
+            height: 10px;
+            border-radius: 5px;
+            border:1px solid #007aff;
+            color:#007aff; 
+            
+        }
+        
+      
+
+        
+    </style>
+</head>
+<body>
+    <div class="normal-conatiner">
+        <h1>Choose a plan that right  for your business</h1> 
+        <p>We collect reviews from our users  so you can  get an honest opinion of what an  experience with our website are really like!</p>
+    </div>
+
+    <div class="container">
+        <div>
+            <h3>Starter Plan</h3>
+            <h2>Free</h2>
+            <p id="item-1"><i>per month</i></p>
+            <p>We collect reviews from our users  so you can  get an honest opinion of what an  experience with our website.</p>
+            <button><h4>Start Now</h4></button>
+        </div>
+        <div></div>
+        <div></div>
+ 
+    </div>
+
+</body>
+</html>

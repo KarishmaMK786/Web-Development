@@ -1,0 +1,9 @@
+.container {
+    border:12px solid red;
+}
+.row {
+    border:6px solid rgb(51, 255, 0);
+}
+.row > div {
+    border:3px solid rgb(132, 0, 255);
+}
